@@ -1,0 +1,13 @@
+** sch_path: /home/leo/Nextcloud/Programmieren/ASIC/icps-tutorial/nand.sch
+**.subckt nand VDD VSS A Z B
+*.iopin VDD
+*.iopin VSS
+*.ipin A
+*.opin Z
+*.ipin B
+M1 net1 B VSS net2 nch w=10.0U l=10.0U as=0 ps=0 ad=0 pd=0 m=1
+M2 Z B VDD net3 pch w=40.0U l=10.0U as=0 ps=0 ad=0 pd=0 m=1
+M3 Z A VDD net4 pch w=40.0U l=10.0U as=0 ps=0 ad=0 pd=0 m=1
+M4 Z A net1 net5 nch w=10.0U l=10.0U as=0 ps=0 ad=0 pd=0 m=1
+**.ends
+.end
